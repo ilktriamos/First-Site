@@ -1,0 +1,481 @@
+body{
+    text-transform: capitalize;
+    margin: 0;
+    padding: 0;
+    height: 3000px;
+}
+.header{
+    width: 100%;
+    overflow: auto;
+    position: fixed;
+    z-index: 1;
+  
+}
+.logo{
+    width: 100px;
+    height: 60px;
+    float: left;
+    margin-left: 35px;
+
+}
+.logo::after{
+    content: "";
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+
+}
+
+.my-tabs{
+    list-style: none;
+    float: right;
+    margin-right: 35px;
+   
+}
+
+.my-tabs li{
+    display: inline;
+    margin-left: 25px;
+    position: relative;
+
+}
+.my-tabs li a{
+    text-decoration: none;
+    color: rgb(207, 0, 0);
+    font-size: 20px;
+    font-weight: bolder;
+}
+.my-tabs li a::after{
+    content: "";
+    width:0 ;
+    height: 130%x;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 1s;
+    
+}
+.my-tabs li a:hover::after{
+    width:100% ;
+    height: 130%;  
+    border: 0.5px solid red; 
+}
+.home{
+    background-image: url(../images/ddd.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100vh;
+    position: relative;
+
+}
+.overlay{
+    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.intro{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color:wheat ;
+    text-align: center;
+    
+}
+.home .overlay .intro button{
+    border: none;
+    background-color: rgb(177, 166, 140);
+    width: 200px;
+    height: 100px;
+    border-radius:50% ;
+    margin: 5px;
+   
+}
+.home .overlay .intro button a{
+    text-decoration: none;
+    color: rgb(83, 22, 7);
+    text-transform: capitalize;
+    font-size: 25px;
+
+
+}
+.home .overlay .intro h2{
+    font-size: 35px;
+    line-height: 2px;
+}
+
+.pd{
+    padding: 1px 0;
+}
+.welcome{
+    width: 100%;
+    height: 100vh;
+    background-color: gray; 
+}
+.titel{
+    color: rgb(9, 46, 82);
+    font-size: 30px;
+    text-transform: capitalize;
+    text-align: center;
+    line-height: 1px;
+}
+
+#line{
+    display: block;
+    width: 100px;
+    height: 1px;
+    background-color: blue;
+    margin: 0 auto 70px auto ;
+    padding-top: 1px;
+}
+.container{
+    margin: auto;
+    width: 80%;
+    overflow: auto;
+
+}
+.cont{
+    float: left;
+    width: 30%;
+    height: 250px;
+    border: 4px solid red;
+    text-align: center;
+    color: wheat;
+    margin: 2px 2px 0 2px ;
+    position: relative;
+    z-index: 1;
+}
+.cont::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    transition: 0.5s;
+    z-index: -1;
+}
+.cont:hover::after{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    
+}
+
+
+.cont h2{
+    line-height: 2px;
+
+}
+.cont a {
+    text-decoration: none;
+    display: block;
+    padding-top: 35px;
+}
+.cont:hover .linnk {
+    color: wheat;    font-size: 35px;
+    transition: 0.5s;
+    padding-top: 70px;
+}
+
+.cont:hover h2{
+    color: rgb(100, 151, 19);
+    font-size: 30px;
+    transition: 1s;
+}
+.father div{
+    background-image: url(../images/Blue\ Ceramic\ Vintage\ Soup\ Bowl\ Dish\ -\ Scale-colored\ Gray.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 70% 100%;
+}
+
+.layer h2{
+    text-align: center;
+    color:wheat;
+    font-size: 35px;
+    opacity: 0;
+    visibility: hidden;
+    
+}
+.cont:hover .layer h2{
+    opacity: 1;
+    visibility: visible;
+    transition: 1s;
+    text-align: center;
+    color: wheat;
+    font-size: 40px;
+   
+}
+.what-we{
+    padding: 120px 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(58, 97, 173);
+    color: gray;
+    margin: 35px 0 0 0;
+}
+.introd{
+    padding-top: 25px;
+    line-height: 8px;
+}
+
+.diamond{
+    position: absolute;
+    top: 20px;
+    left: 55px;
+    font-size: 35px;
+}
+.change-color{
+    color: wheat;
+}
+
+
+
+
+
+
+.why-us{
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    padding-top: 100px;
+    font-size: 20px;
+    color: wheat;
+    background-color: gray;
+    /* padding-left: 40px; */
+
+}
+.details-left div{
+    padding-left: 150px;
+    padding-top: 15px;
+    
+}
+.details-left div h2{
+
+    font-size: 50px;
+} 
+.details-left{
+    position: relative;
+}
+.details-left ul{
+    display: inline;
+    position: relative;
+    list-style: none;
+}
+.img-right{
+    width: 300px;
+    height: 400px;
+    background-image: url(../images/The\ Godfather.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 15px;
+    right: 180px;
+}
+
+
+.parent-3{
+    background-image: url(../images/eee.jpeg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    width: 100%;
+    height: 350px;
+    margin: auto;
+    position: relative;
+    
+    
+    
+}
+.overlay-2{
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;     
+    left: 0;
+    overflow: hidden;
+}
+
+.horizental{
+    color: wheat;
+    font-weight: bolder;
+    font-size: 30px;
+    float: left;
+    text-align: center;
+    width: 25%;
+    padding-top: 130px;
+    line-height: 2px;
+}
+
+
+.titel-pricing{
+    text-align: center;
+    font-size: 35px;
+    color: wheat;
+    line-height: 3px;
+    padding-top: 30px;
+}
+.pricing{
+    background-color: rgb(92, 59, 9);
+}
+
+.container-5{
+    overflow: auto;
+    margin: auto;
+    width: 80%;
+    padding: 30px 15px;
+
+}
+.con{
+    float: left;
+    width: 30%;
+    height: 350px;
+    border: rebeccapurple solid 5px;
+    text-align: center;
+    color: wheat;
+    font-size: 20px;
+    margin: 2px;
+    align-items: center;
+    justify-content: center;
+}
+.circle{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: red 2px solid;
+    margin: 20px auto;
+    padding-top: 1px;
+    /* text-align: justify; */
+    position: relative;
+    
+}
+.circle h2{
+    position: absolute;
+    top: -25%;
+    left: 50%;
+    transform: translate(-50%,-5%);
+    font-size: 60px;
+}
+.con button{
+    font-size: 20px; 
+    border: 1px solid blue;
+    cursor: pointer;
+
+}
+
+.our-team{
+    padding-top: 120px;
+    width: 100%;
+    height: 100vh;
+
+}
+.container-special{
+    width: 80%;
+    margin: auto;
+    height: 100vh;
+    overflow: auto;
+    position: relative;
+
+}
+.out-overlay{
+    width: 30%;
+    border: 2px solid red;
+    float: left;
+    margin: 15px 2px 0 2px;
+    text-align: center;
+    position: relative;
+    
+}
+.out-overlay:hover h2{
+    color: blue;
+    font-size: 40px;
+    transition: 1s;
+}
+.in-overlay::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+
+}
+.in-overlay:hover:after{
+    background-color: rgba(9, 11, 122, 0.5);
+    width: 100%;
+    height: 100%;
+    transition: 2s;
+}
+.out-overlay a{
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.in-overlay{
+    width: 80%;
+    height: 300px;
+    margin: auto;
+    background-image: url(../images/Blue\ Ceramic\ Vintage\ Soup\ Bowl\ Dish\ -\ Scale-colored\ Gray.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    position: relative;
+    
+}
+.icoons{
+    text-align: center;
+    width:20%;
+    height: 140px;
+    background-color: blue;
+    color: rgb(255, 0, 0);
+    justify-content: right;
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    
+}
+.cc{
+    display: block;
+    font-size: 40px;
+}
+
+.out-overlay:hover .icoons{
+    opacity: 1;
+    transition: 0.5s;
+
+}
+
+.last-part{
+    width: 100%;
+    height: 30vh;
+    background-color: gray;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+}
+.last-img{
+    width: 100px;
+    height: 100px;
+    background-image: url(../images/Blue\ Ceramic\ Vintage\ Soup\ Bowl\ Dish\ -\ Scale-colored\ Gray.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: auto;
+    padding-top: 55px;
+}
+.oo{
+    font-size: 30px;
+    color: blue;
+    font-weight: bolder;
+}
